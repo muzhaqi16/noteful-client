@@ -37,7 +37,7 @@ class App extends Component {
         this.setState({ notes, folders })
       })
       .catch(error => {
-        console.error({ error })
+        console.error(error.message + '. Make sure that the server is running')
       })
   }
 
